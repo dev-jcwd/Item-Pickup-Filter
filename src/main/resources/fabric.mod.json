@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "ipf",
+  "version": "${version}",
+  "name": "Item Pickup Filter",
+  "description": "Client-side item pickup filter.",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/ipf/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.ipf.IPFClient"
+    ],
+    "modmenu": [
+      "com.ipf.IPFModMenu"
+    ]
+  },
+"depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": ">=1.21 <=1.21.8",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
