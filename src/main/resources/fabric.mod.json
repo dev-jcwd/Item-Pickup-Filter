@@ -7,8 +7,7 @@
   "authors": [],
   "contact": {},
   "license": "MIT",
-  "icon": "assets/ipf/icon.png",
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "client": [
       "com.ipf.IPFClient"
@@ -17,10 +16,17 @@
       "com.ipf.IPFModMenu"
     ]
   },
-"depends": {
+  "mixins": [
+    "ipf.mixins.json"
+  ],
+  "depends": {
     "fabricloader": ">=0.18.1",
-    "minecraft": ">=1.21 <=1.21.8",
-    "java": ">=21",
-    "fabric-api": "*"
+    "minecraft": "${mc_range}",
+    "java": ">=${java_version}",
+    "fabric-api": "*",
+    "cloth-config": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
   }
 }
